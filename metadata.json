@@ -1,0 +1,6 @@
+{
+  "name": "송이베이크룸 (Songi Bake Room)",
+  "description": "귀여운 강아지 송이와 함께하는 유기농 천연발효빵 맛집 송이베이크룸의 디지털 메뉴와 맞춤 빵 주문 서비스입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

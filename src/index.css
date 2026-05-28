@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Italiana&family=Pinyon+Script&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", serif;
+  --font-display: "Playfair Display", "Italiana", serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-cream-50: #F9F7F2;      /* Artistic Flair Cream */
+  --color-brand-cream-100: #F2EFE8;     /* Warm contrast cream */
+  --color-brand-cream-200: #E8E4D8;     /* Artistic Flair Sepia */
+  --color-brand-olive-light: #8C8C6E;   /* Muted olive */
+  --color-brand-olive-dark: #5A5A40;    /* Artistic Flair Olive */
+  --color-brand-gold: #A68B67;          /* Artistic Flair Gold */
+  --color-brand-charcoal: #2D2926;      /* Artistic Flair Ink */
+}
+
+/* Custom visual style for gorgeous scrollbars and organic grains */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E4D8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C8C6E;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Gorgeous arched crop masks */
+.arch-frame {
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+  background-color: #E8E4D8;
+  border: 1px solid rgba(166, 139, 103, 0.2);
+}
+.arch-top-rounded {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.arch-left-rounded {
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+}
+.arch-pill {
+  border-radius: 9999px;
+}
+.arch-asymmetric-1 {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.arch-asymmetric-2 {
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
